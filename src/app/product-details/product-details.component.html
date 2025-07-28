@@ -1,0 +1,24 @@
+<div class="container mx-auto p-4">
+  @if (loading) {
+    <div class="text-center text-gray-500">Loading...</div>
+  }
+  @if (error) {
+    <div class="text-center text-red-500">{{ error }}</div>
+  }
+  @if (!loading && !error && product) {
+    <div class="max-w-2xl mx-auto bg-white rounded-lg shadow p-6 flex flex-col md:flex-row gap-6">
+      <img [src]="product.image" [alt]="product.title" class="w-48 h-48 object-contain mx-auto md:mx-0" />
+      <div class="flex-1 flex flex-col justify-center">
+        <h2 class="text-2xl font-bold mb-2">{{ product.title }}</h2>
+        <p class="text-blue-600 font-bold text-xl mb-2">${{ product.price }}</p>
+        <p class="text-gray-700 mb-4">{{ product.description }}</p>
+        <div class="text-sm text-gray-500 mb-2">Category: {{ product.category }}</div>
+        <div class="text-yellow-500 flex items-center gap-1">
+          @if (product.rating) {
+            <span>Rating: {{ product.rating.rate }} / 5 ({{ product.rating.count }} reviews)</span>
+          }
+        </div>
+      </div>
+    </div>
+  }
+</div>
