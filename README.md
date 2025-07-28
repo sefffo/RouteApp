@@ -2,6 +2,10 @@
 
 https://drive.google.com/file/d/1jL81u7vGMmni-bLrCrrSGaqZQW--uo01/view?usp=sharing
 
+with the product details using id (Important !!!!!)
+
+https://drive.google.com/file/d/1dBMAKZGoYfSZVeW4-dNfdPPf8mzRIMyv/view?usp=sharing
+
 # RouteApp
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.6.
